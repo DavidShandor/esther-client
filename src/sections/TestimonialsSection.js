@@ -1,14 +1,22 @@
+// sections/TestimonialsSection.js
 import React from 'react';
 import Slider from 'react-slick';
 import './TestimonialsSection.css';
 
-import img1 from '../assets/review1.jpg';
-import img2 from '../assets/review2.jpg';
-import img3 from '../assets/review3.jpg';
-import img4 from '../assets/review4.jpg';
-import img5 from '../assets/review5.jpg';
+// טוען את כל הקבצים מהתיקייה ../assets/testimonials עם סיומות תמונה נפוצות
+function importAll(r) {
+  // ממפה לנתיבי תמונה (URLs שנוצרים בבילד) וממיין לפי שם קובץ
+  return r.keys()
+    .sort()                      // ממיין אלפביתית: review1, review2...
+    .map((key) => ({ 
+      src: r(key), 
+      name: key.replace('./', '') 
+    }));
+}
 
-
+const images = importAll(
+  require.context('../assets/testimonials', false, /\.(png|jpe?g|webp|gif)$/)
+);
 
 const TestimonialsSection = () => {
   const settings = {
@@ -23,15 +31,13 @@ const TestimonialsSection = () => {
     autoplaySpeed: 5000,
   };
 
-  const images = [img1, img2, img3, img4, img5];
-
   return (
     <section id="testimonials" className="testimonials-section">
       <h2>מה מספרים על הספר?</h2>
       <Slider {...settings} className="testimonial-slider">
-        {images.map((img, index) => (
-          <div key={index} className="testimonial-slide">
-            <img src={img} alt={`המלצה ${index + 1}`} />
+        {images.map((img, i) => (
+          <div key={img.name || i} className="testimonial-slide">
+            <img src={img.src} alt={`המלצה: ${img.name}`} />
           </div>
         ))}
       </Slider>
