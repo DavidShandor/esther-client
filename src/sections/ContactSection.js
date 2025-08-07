@@ -14,19 +14,20 @@ const ContactSection = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // כאן נוכל לשלוח את הנתונים בעתיד ל־Node.js
-    alert('ההודעה נשלחה! תודה :)');
-    setFormData({ name: '', email: '', phone: '', message: '' });
-  };
-
   return (
-    <section id="contact" className="contact-section" >
+    <section id="contact" className="contact-section">
       <h2>צור קשר</h2>
       <p>רוצים לשאול שאלה, להזמין הרצאה או פשוט לשלוח מילה טובה?</p>
 
-      <form onSubmit={handleSubmit} className="contact-form">
+      <form
+        action="https://formsubmit.co/esthershandor15@gmail.com"
+        method="POST"
+        className="contact-form"
+      >
+        {/* שדות מוסתרים למניעת ספאם */}
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://yourdomain.com/thanks" />
+
         <input
           type="text"
           name="name"
@@ -51,7 +52,6 @@ const ContactSection = () => {
           placeholder="טלפון"
           value={formData.phone}
           onChange={handleChange}
-          required
         />
 
         <textarea
