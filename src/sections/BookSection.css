@@ -1,0 +1,59 @@
+.book-section {
+  background-color: #eaf6f6;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.book-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.book-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.book-image img {
+  max-width: 300px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.book-text {
+  max-width: 600px;
+}
+
+.book-text p {
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.book-text .highlight {
+  font-weight: bold;
+  color: #c62828;
+}
+
+.book-icons {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.book-icons div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #333;
+}

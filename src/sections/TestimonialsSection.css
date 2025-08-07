@@ -1,0 +1,23 @@
+.testimonials-section {
+  background-color: #fffaf5;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.testimonial-slider {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.testimonial-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
