@@ -7,6 +7,7 @@ import BookSection from './sections/BookSection';
 import TestimonialsSection from './sections/TestimonialsSection';
 import ContactSection from './sections/ContactSection';
 import LecturesSection from './sections/LecturesSection';
+import { Toaster } from 'react-hot-toast';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <TestimonialsSection />
       <ContactSection />
       <Footer />
+       <Toaster position="bottom-center" />
     </div>
   );
 }
