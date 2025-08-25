@@ -12,17 +12,16 @@
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #333;
-  white-space: nowrap;
+  height: 75px;
+  width: auto;
+  object-fit: contain;
 }
 
 .nav-links {
   flex: 1;
   display: flex;
   justify-content: center;
-  gap: 32px;
+  gap: 50px;
 }
 
 .nav-links a {
