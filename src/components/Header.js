@@ -11,6 +11,7 @@ const Header = () => {
       <nav className="nav-links">
         <a href="#about">עליי</a>
         <a href="#book">הספר</a>
+        <a href="#lectures">הרצאות</a> 
         <a href="#testimonials">המלצות</a>
         <a href="#contact">צור קשר</a>
       </nav>

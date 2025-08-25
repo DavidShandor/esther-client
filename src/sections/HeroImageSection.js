@@ -1,13 +1,13 @@
 import React from 'react';
 import './HeroImageSection.css';
-import heroImage from '../assets/hero.jpeg'; // שים כאן את התמונה שלך
+import heroImage from '../assets/Hero.jpg'; // שים כאן את התמונה שלך
 
 const HeroImageSection = () => {
   return (
     <section className="hero-image-section">
       <div className="overlay">
-        <h1>כאן יבוא משפט חזק או כותרת</h1>
-        <p>ואולי גם תת-כותרת שתסביר</p>
+        <h1>אף פעם לא לבד</h1>
+        <p>יחד לומדים לראות את מה שמעבר למילים – סיפור, כלים ותובנות לחיים</p>
       </div>
       <img src={heroImage} alt="Hero" className="hero-image" />
     </section>

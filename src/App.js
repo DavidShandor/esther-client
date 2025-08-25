@@ -6,6 +6,7 @@ import AboutSection from './sections/AboutSection';
 import BookSection from './sections/BookSection';
 import TestimonialsSection from './sections/TestimonialsSection';
 import ContactSection from './sections/ContactSection';
+import LecturesSection from './sections/LecturesSection';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <HeroImageSection />
       <AboutSection />
       <BookSection />
+      <LecturesSection/>
       <TestimonialsSection />
       <ContactSection />
       <Footer />
