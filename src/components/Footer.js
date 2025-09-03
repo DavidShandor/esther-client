@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer-columns">
         <div className="footer-col">
           <h4>אסתר שנדור</h4>
-          <p>סופרת, מורה ומרצה</p>
+          <p>סופרת, מחנכת ומרצה</p>
           <p>מתמחה בילדים עם צרכים מיוחדים ובליווי משפחות</p>
         </div>
 
@@ -21,7 +21,6 @@ const Footer = () => {
 
         <div className="footer-col">
           <h4>מידע עסקי</h4>
-          <p>עוסק פטור: 123456789</p>
           <p><a href="mailto:esthershandor15@gmail.com">esthershandor15@gmail.com</a></p>
           <p><a href="tel:0526754975">052-675-4975</a></p>
         </div>

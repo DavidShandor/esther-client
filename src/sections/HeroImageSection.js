@@ -7,7 +7,7 @@ const HeroImageSection = () => {
     <section className="hero-image-section">
       <div className="overlay">
         <h1>אף פעם לא לבד</h1>
-        <p>יחד לומדים לראות את מה שמעבר למילים – סיפור, כלים ותובנות לחיים</p>
+        <p><b>יחד לומדים לראות את מה שמעבר למילים – סיפור, כלים ותובנות לחיים</b></p>
       </div>
       <img src={heroImage} alt="Hero" className="hero-image" />
     </section>

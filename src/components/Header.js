@@ -16,11 +16,6 @@ const Header = () => {
         <a href="#testimonials">המלצות</a>
         <a href="#contact">צור קשר</a>
       </nav>
-       <a 
-          href="https://mrng.to/ZniNOZNOCu"
-          className="order-btn"
-          target="_blank"
-          rel="noopener noreferrer">להזמנה</a>
     </header>
   );
 };

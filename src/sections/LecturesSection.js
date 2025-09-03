@@ -1,27 +1,39 @@
 import React from 'react';
 import './LecturesSection.css';
+import lectureThumb from '../assets/pic1.jpg'; // ← עדכן נתיב/שם קובץ
 
 const LecturesSection = () => {
   return (
     <section id="lectures" className="lectures-section">
       <h2>הרצאות</h2>
-      <p>
-        כאן יבוא טקסט קצר על ההרצאות – מה הנושאים, למי הן מיועדות, ומה הערך שהקהל מקבל.
-      </p>
 
       <div className="lectures-list">
-        <div className="lecture-card">
-          <h3>אף פעם לא לבד</h3>
-          <p>הרצאה על אומץ ואמונה שהכול אפשרי. שיחה שנוגעת באנשים דרך סיפור חיים אישי, מראה לנו את היכולת לבחור ומכניסה אותנו לעולם של המשפחות המיוחדות דרך ספר הילדים "מה שמואל רוצה?"</p>
+       <div className="lecture-card">
+          <img
+            className="lecture-thumb"
+            src={lectureThumb}
+            alt="אף פעם לא לבד — הרצאה של אסתר שנדור"
+          />
+          <div className="lecture-content">
+            <h3>"אף פעם לא לבד"</h3>
+            <p>
+              שיחה אישית של אסתר שנדור – אחות לילד עם צרכים מיוחדים שנפטר ממחלה נדירה,
+              ואמא לשמואל, ילד עם צרכים מיוחדים. בהרצאה אסתר משתפת באתגרים ובמסע שהמשפחה
+              עברה ועדיין עוברת, ומדברת על הכוח של הקהילה, הכלה ושילוב.
+            </p>
+            <p className="lecture-meta">
+              <strong>מתאים ל:</strong> קבוצות, הורים ותיכונים
+              <br /> {/* כאן השבירה שורה */}
+            </p>
+            <a href="#contact" className="lecture-btn">להזמנת הרצאה</a>
+          </div>
         </div>
 
-        {/* <div className="lecture-card">
-          <h3>כותרת הרצאה נוספת</h3>
-          <p>עוד תיאור קצר, שתרחיב עליו בהמשך.</p>
-        </div> */}
+
+        {/* לכרטיסים עתידיים אפשר לשכפל את הבלוק למעלה */}
       </div>
 
-        <p className="lectures-coming-soon">הרצאות נוספות בקרוב!</p>
+      <p className="lectures-coming-soon">הרצאות נוספות בקרוב!</p>
     </section>
   );
 };

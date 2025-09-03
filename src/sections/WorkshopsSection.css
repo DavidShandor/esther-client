@@ -1,6 +1,6 @@
 .workshops-section {
   padding: 4rem 2rem;
-  background-color: #fefefe;
+  background-color: #fce2c0;
   text-align: center;
 }
 
@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -22,11 +22,86 @@
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  text-align: right; /* ל־RTL */
+  text-align: right;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  position: relative; /* מאפשר למקם את הכפתור בתחתית */
+}
+
+/* תמונה מוקטנת, לא נחתכת */
+.workshop-thumb {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;          /* שלא ייחתך */
+  background-color: #f4f4f4;    /* מסגרת עדינה סביב תמונות צרות */
+  border-radius: 10px;
+  padding: 4px;
+  flex: 0 0 120px;
+}
+
+.workshop-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.workshop-content h3 {
+  margin: 0 0 .5rem 0;
+  font-size: 1.25rem;
+}
+
+/* שורת מטא + כפתור */
+.workshop-meta {
+  margin-top: .5rem;
+  color: #555;
+}
+
+.workshop-cta {
+  color: #ff6b6b;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.workshop-cta:hover {
+  text-decoration: underline;
 }
 
 .workshops-coming-soon {
   margin-top: 2rem;
   font-weight: bold;
   color: #444;
+}
+
+/* מובייל */
+@media (max-width: 640px) {
+  .workshop-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
+  }
+  .workshop-thumb {
+    width: 140px;
+    height: 140px;
+  }
+  .workshop-content {
+    width: 100%;
+  }
+}
+
+.workshop-btn {
+  align-self: flex-end;      /* שמאלה ב־RTL */
+  margin-top: auto;            /* דוחף למטה */
+  padding: 8px 16px;
+  background-color: #ff6b6b;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.workshop-btn:hover {
+  background-color: #e64e4e;
 }

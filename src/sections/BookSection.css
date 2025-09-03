@@ -22,7 +22,7 @@
 }
 
 .book-image img {
-  max-width: 300px;
+  max-width: 400px;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
@@ -56,4 +56,25 @@
   align-items: center;
   font-size: 0.9rem;
   color: #333;
+}
+
+.book-cta-container {
+  margin-top: 2rem;
+   display: flex;
+  justify-content: flex-end; /* שמאלה */
+}
+
+.book-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ff6b6b;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.book-btn:hover {
+  background-color: #e64e4e;
 }

@@ -33,7 +33,7 @@ const TestimonialsSection = () => {
 
   return (
     <section id="testimonials" className="testimonials-section">
-      <h2>מה מספרים על הספר?</h2>
+      <h2>מה מספרים על הספר וההרצאה?</h2>
       <Slider {...settings} className="testimonial-slider">
         {images.map((img, i) => (
           <div key={img.name || i} className="testimonial-slide">
