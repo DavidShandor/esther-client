@@ -49,7 +49,7 @@ const BookSection = () => {
       </div>
       <div className="book-cta-container">
     <a 
-      href="https://mrng.to/UtBFNeUSeW" 
+      href="https://mrng.to/vYBoNLOajZ" 
       target="_blank" 
       rel="noopener noreferrer"
       className="book-btn"
